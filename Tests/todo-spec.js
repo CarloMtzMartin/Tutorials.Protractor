@@ -1,22 +1,22 @@
 'use strict';
-var AngularHomePage = require('./angularHome.page.js');
+var AngularHomePage = require('../TestFramework/Pages/angularHome.page.js');
 
 describe('angularjs homepage todo list', function() {
-  var page;
+  var angularHomePage;
 
   beforeEach(function() {
-    page = new AngularHomePage();
+    angularHomePage = new AngularHomePage();
   });
 
   it('Should ...', function() {
-    page.addToDo('New Page Object Pattern to-do.');
+    angularHomePage.addToDo('New Page Object Pattern to-do.');
 
-    expect(page.todoList.count()).toEqual(3);
-    expect(page.todoItemAtIndex(2).getText()).toEqual('New Page Object Pattern to-do.');
+    expect(angularHomePage.todoList.count()).toEqual(3);
+    expect(angularHomePage.todoItemAtIndex(2).getText()).toEqual('New Page Object Pattern to-do.');
 
-    page.toggleToDo(2);
-    expect(page.isCompleted(2)).toBe(true);
-    expect(page.completedTodoList.count()).toEqual(2);
+    angularHomePage.toggleToDo(2);
+    expect(angularHomePage.isCompleted(2)).toBe(true);
+    expect(angularHomePage.completedTodoList.count()).toEqual(2);
   });
 
   // it('should add a todo', function() {

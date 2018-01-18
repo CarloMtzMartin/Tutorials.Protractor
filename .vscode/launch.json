@@ -10,7 +10,7 @@
             "name": "Launch Program",
             // "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
             "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
-            "args": ["${workspaceRoot}/conf.js"],
+            "args": ["${workspaceRoot}/Tests/conf.js"],
         }
     ]
 }
