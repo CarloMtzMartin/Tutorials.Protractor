@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<test-results name="Jasmine Results" total="2" failures="0" not-run="0" date="2018-01-21" time="22:38:32">
+ <test-suite name="AngularJs Homepage Tests" executed="true" success="true" time="12.639">
+  <results>
+   <test-case name="Should add a new to-do." executed="true" success="true" time="9.693">
+   </test-case>
+   <test-case name="Should mark a to-do as completed." executed="true" success="true" time="2.929">
+   </test-case>
+  </results>
+ </test-suite>
+</test-results>

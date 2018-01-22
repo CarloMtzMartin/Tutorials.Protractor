@@ -1,21 +1,25 @@
+// Install Jasmine-Reporters.
+// npm install --save-dev jasmine-reporters@^2.0.0
+
 'use strict';
 var AngularHomePage = require('../TestFramework/Pages/angularHome.page.js');
 
-describe('angularjs homepage todo list', function() {
+describe('AngularJs Homepage Tests', function() {
   var angularHomePage;
 
   beforeEach(function() {
     angularHomePage = new AngularHomePage();
   });
 
-  it('Should ...', function() {
+  it('Should add a new to-do.', function() {
     angularHomePage.addToDo('New Page Object Pattern to-do.');
-
     expect(angularHomePage.todoList.count()).toEqual(3);
     expect(angularHomePage.todoItemAtIndex(2).getText()).toEqual('New Page Object Pattern to-do.');
+  });
 
-    angularHomePage.toggleToDo(2);
-    expect(angularHomePage.isCompleted(2)).toBe(true);
+  it('Should mark a to-do as completed.', function() {
+    angularHomePage.toggleToDo(1);
+    expect(angularHomePage.isCompleted(1)).toBe(true);
     expect(angularHomePage.completedTodoList.count()).toEqual(2);
   });
 
