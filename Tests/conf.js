@@ -7,7 +7,7 @@ exports.config = {
     var jasmineReporters = require('jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.NUnitXmlReporter({
         consolidateAll: true,
-        savePath: 'C:\\Source\\GIT\\Tutorials.Protractor\\testResults',
+        savePath: './TestResults',
         
     }));
   }
