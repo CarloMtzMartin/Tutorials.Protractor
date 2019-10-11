@@ -1,10 +1,10 @@
 {
-  "name": "protractor",
+  "name": "protractorTutorial",
   "version": "1.0.0",
   "description": "Protractor test project.",
   "dependencies": {
-    "jasmine-reporters": "^2.0.0",
-    "protractor": "^5.2.2"
+    "jasmine-reporters": "^2.3.2",
+    "protractor": "^5.4.2"
   },
   "devDependencies": {},
   "scripts": {
