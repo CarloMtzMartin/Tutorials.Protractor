@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Protractor test project.",
   "dependencies": {
-    "jasmine-reporters": "^2.3.2",
+    "jasmine-reporters": "^2.5.0",
     "protractor": "^5.4.2"
   },
   "devDependencies": {},
